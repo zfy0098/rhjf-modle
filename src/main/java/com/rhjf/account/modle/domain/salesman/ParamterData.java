@@ -157,6 +157,9 @@ public class ParamterData implements Serializable{
 	private String businessPhoto;
 
 
+	/** 设备类型 **/
+	private String deviceType;
+
 	/**  我的二维码地址 **/
 	private String myQRCodeURL;
 
@@ -182,6 +185,13 @@ public class ParamterData implements Serializable{
 
 	/**  到账类型 T1 或者T0 **/
 	private String tradeCode;
+
+
+	/**  开关 **/
+	private String open;
+
+
+
 
 
 	public String getLoginID() {
@@ -617,5 +627,22 @@ public class ParamterData implements Serializable{
 
 	public void setQRCodeURL(String QRCodeURL) {
 		this.QRCodeURL = QRCodeURL;
+	}
+
+
+	public String getOpen() {
+		return open;
+	}
+
+	public void setOpen(String open) {
+		this.open = open;
+	}
+
+	public String getDeviceType() {
+		return deviceType;
+	}
+
+	public void setDeviceType(String deviceType) {
+		this.deviceType = deviceType;
 	}
 }

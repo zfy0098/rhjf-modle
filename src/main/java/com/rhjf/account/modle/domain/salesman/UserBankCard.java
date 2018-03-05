@@ -30,6 +30,9 @@ public class UserBankCard implements Serializable{
 	private String bankName;
 	private String settleCreditCard;
 	private String settleBankType;
+	private String payerPhone;
+
+
 
 	public void setID(String ID) {
 		this.ID = ID;
@@ -117,5 +120,13 @@ public class UserBankCard implements Serializable{
 
 	public String getSettleBankType() {
 		return settleBankType;
+	}
+
+	public String getPayerPhone() {
+		return payerPhone;
+	}
+
+	public void setPayerPhone(String payerPhone) {
+		this.payerPhone = payerPhone;
 	}
 }
